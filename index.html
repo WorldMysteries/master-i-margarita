@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Мастер и Маргарита — Многостраничная HTML-книга</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html">Мастер и Маргарита</a>
+      <nav class="top-links">
+        <a href="index.html" class="active">Титул и оглавление</a>
+        <a href="glava-01.html">Читать с первой главы</a>
+        <a href="geroi.html">Герои и места</a>
+      </nav>
+      <div class="toolbar-group">
+        <button type="button" class="ctrl-btn" data-set-theme="paper">Бумага</button>
+        <button type="button" class="ctrl-btn" data-set-theme="sepia">Сепия</button>
+        <button type="button" class="ctrl-btn" data-set-theme="night">Ночь</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-wrap">
+    <section class="cover-hero">
+      <figure class="plate-frame" style="margin:0;">
+        <img src="images/cover.jpg" alt="Фронтиспис к роману Мастер и Маргарита" />
+        <figcaption class="plate-caption">
+          <span>Фронтиспис издания</span>
+          <span>1928–1940</span>
+        </figcaption>
+      </figure>
+
+      <div class="cover-meta">
+        <div>
+          <p class="kicker">Михаил Афанасьевич Булгаков</p>
+          <h1 class="cover-title">Мастер и Маргарита</h1>
+          <p class="subtitle" style="margin-top:14px;">
+            Полное многостраничное HTML-издание: 35 связанных HTML-страниц с книжным разворотом,
+            лентой чтения, закладками и примечаниями. Работает автономно в любом браузере.
+          </p>
+          <blockquote class="epigraph">
+            <p>«...Так кто ж ты, наконец?» — «Я — часть той силы, что вечно хочет зла и вечно совершает благо».</p>
+            <cite>— Гёте. «Фауст»</cite>
+          </blockquote>
+        </div>
+
+        <div>
+          <div class="cta-row">
+            <a href="glava-01.html" class="btn-primary">Открыть Главу I &rarr;</a>
+            <a href="#toc" class="btn-secondary">Перейти к оглавлению</a>
+            <a href="geroi.html" class="btn-secondary">Герои и места</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="savedBookmarksBox" style="display:none; padding: 28px 0; border-bottom: 1px solid var(--border);">
+      <h2>Ваши закладки</h2>
+      <div id="savedBookmarksList" class="toolbar-group"></div>
+    </section>
+
+    <section id="toc" style="padding-top: 36px;">
+      <p class="kicker">Содержание романа</p>
+      <h2 style="font-size:2.2rem;">Оглавление (33 глав)</h2>
+
+      <div class="toc-tools">
+        <input id="tocSearch" class="search-input" type="search" placeholder="Поиск главы по названию или месту..." />
+        <div class="toolbar-group">
+          <button type="button" class="ctrl-btn active" data-part-filter="all">Весь роман</button>
+          <button type="button" class="ctrl-btn" data-part-filter="1">Часть первая</button>
+          <button type="button" class="ctrl-btn" data-part-filter="2">Часть вторая и Эпилог</button>
+        </div>
+      </div>
+
+      <h3 style="font-family:Cormorant Garamond,serif;font-size:1.5rem;margin:24px 0 10px;">Часть первая</h3>
+      <ul class="toc-list">
+        <li data-toc-item data-part="1"><a href="glava-01.html"><span class="toc-num">Глава I</span><span class="toc-title">Никогда не разговаривайте с неизвестными</span><span class="toc-loc">Москва · Патриаршие пруды</span></a></li>
+        <li data-toc-item data-part="1"><a href="glava-02.html"><span class="toc-num">Глава II</span><span class="toc-title">Понтий Пилат</span><span class="toc-loc">Ершалаим · Дворец Ирода</span></a></li>
+        <li data-toc-item data-part="1"><a href="glava-03.html"><span class="toc-num">Глава III</span><span class="toc-title">Седьмое доказательство</span><span class="toc-loc">Москва · Патриаршие пруды и Бронная</span></a></li>
+        <li data-toc-item data-part="1"><a href="glava-04.html"><span class="toc-num">Глава IV</span><span class="toc-title">Погоня</span><span class="toc-loc">Москва · Патриарший переулок — Москва-река</span></a></li>
+        <li data-toc-item data-part="1"><a href="glava-05.html"><span class="toc-num">Глава V</span><span class="toc-title">Было дело в Грибоедове</span><span class="toc-loc">Москва · Тверской бульвар, Дом Грибоедова</span></a></li>
+        <li data-toc-item data-part="1"><a href="glava-06.html"><span class="toc-num">Глава VI</span><span class="toc-title">Шизофрения, как и было сказано</span><span class="toc-loc">Подмосковье · Клиника Стравинского</span></a></li>
+        <li data-toc-item data-part="1"><a href="glava-07.html"><span class="toc-num">Глава VII</span><span class="toc-title">Нехорошая квартира</span><span class="toc-loc">Москва · Большая Садовая, д. 302-бис, кв. 50</span></a></li>
+        <li data-toc-item data-part="1"><a href="glava-08.html"><span class="toc-num">Глава VIII</span><span class="toc-title">Поединок между профессором и поэтом</span><span class="toc-loc">Подмосковье · Клиника Стравинского</span></a></li>
+        <li data-toc-item data-part="1"><a href="glava-09.html"><span class="toc-num">Глава IX</span><span class="toc-title">Коровьевские штуки</span><span class="toc-loc">Москва · Большая Садовая, д. 302-бис</span></a></li>
+        <li data-toc-item data-part="1"><a href="glava-10.html"><span class="toc-num">Глава X</span><span class="toc-title">Вести из Ялты</span><span class="toc-loc">Москва · Театр Варьете</span></a></li>
+        <li data-toc-item data-part="1"><a href="glava-11.html"><span class="toc-num">Глава XI</span><span class="toc-title">Раздвоение Ивана</span><span class="toc-loc">Подмосковье · Клиника Стравинского</span></a></li>
+        <li data-toc-item data-part="1"><a href="glava-12.html"><span class="toc-num">Глава XII</span><span class="toc-title">Черная магия и ее разоблачение</span><span class="toc-loc">Москва · Зрительный зал Варьете</span></a></li>
+        <li data-toc-item data-part="1"><a href="glava-13.html"><span class="toc-num">Глава XIII</span><span class="toc-title">Явление героя</span><span class="toc-loc">Подмосковье · Клиника Стравинского, палата № 117</span></a></li>
+        <li data-toc-item data-part="1"><a href="glava-14.html"><span class="toc-num">Глава XIV</span><span class="toc-title">Слава петуху!</span><span class="toc-loc">Москва · Театр Варьете</span></a></li>
+        <li data-toc-item data-part="1"><a href="glava-15.html"><span class="toc-num">Глава XV</span><span class="toc-title">Сон Никанора Ивановича</span><span class="toc-loc">Москва · Клиника Стравинского</span></a></li>
+        <li data-toc-item data-part="1"><a href="glava-16.html"><span class="toc-num">Глава XVI</span><span class="toc-title">Казнь</span><span class="toc-loc">Ершалаим · Лысая Гора</span></a></li>
+        <li data-toc-item data-part="1"><a href="glava-17.html"><span class="toc-num">Глава XVII</span><span class="toc-title">Беспокойный день</span><span class="toc-loc">Москва · Ваганьковский переулок</span></a></li>
+        <li data-toc-item data-part="1"><a href="glava-18.html"><span class="toc-num">Глава XVIII</span><span class="toc-title">Неудачливые визитеры</span><span class="toc-loc">Москва · Большая Садовая, кв. 50</span></a></li>
+      </ul>
+
+      <h3 style="font-family:Cormorant Garamond,serif;font-size:1.5rem;margin:34px 0 10px;">Часть вторая и Эпилог</h3>
+      <ul class="toc-list">
+        <li data-toc-item data-part="2"><a href="glava-19.html"><span class="toc-num">Глава XIX</span><span class="toc-title">Маргарита</span><span class="toc-loc">Москва · Особняк на Остоженке и Александровский сад</span></a></li>
+        <li data-toc-item data-part="2"><a href="glava-20.html"><span class="toc-num">Глава XX</span><span class="toc-title">Крем Азазелло</span><span class="toc-loc">Москва · Особняк Маргариты</span></a></li>
+        <li data-toc-item data-part="2"><a href="glava-21.html"><span class="toc-num">Глава XXI</span><span class="toc-title">Полет</span><span class="toc-loc">Москва и Подмосковье · Ночное небо</span></a></li>
+        <li data-toc-item data-part="2"><a href="glava-22.html"><span class="toc-num">Глава XXII</span><span class="toc-title">При свечах</span><span class="toc-loc">Москва · Пятое измерение квартиры № 50</span></a></li>
+        <li data-toc-item data-part="2"><a href="glava-23.html"><span class="toc-num">Глава XXIII</span><span class="toc-title">Великий бал у сатаны</span><span class="toc-loc">Москва · Залы Великого бала</span></a></li>
+        <li data-toc-item data-part="2"><a href="glava-24.html"><span class="toc-num">Глава XXIV</span><span class="toc-title">Извлечение мастера</span><span class="toc-loc">Москва · Квартира № 50</span></a></li>
+        <li data-toc-item data-part="2"><a href="glava-25.html"><span class="toc-num">Глава XXV</span><span class="toc-title">Как прокуратор пытался спасти Иуду из Кириафа</span><span class="toc-loc">Ершалаим · Балкон дворца Ирода</span></a></li>
+        <li data-toc-item data-part="2"><a href="glava-26.html"><span class="toc-num">Глава XXVI</span><span class="toc-title">Погребение</span><span class="toc-loc">Ершалаим · Гефсимания и дворец</span></a></li>
+        <li data-toc-item data-part="2"><a href="glava-27.html"><span class="toc-num">Глава XXVII</span><span class="toc-title">Конец квартиры № 50</span><span class="toc-loc">Москва · Большая Садовая, д. 302-бис</span></a></li>
+        <li data-toc-item data-part="2"><a href="glava-28.html"><span class="toc-num">Глава XXVIII</span><span class="toc-title">Последние похождения Коровьева и Бегемота</span><span class="toc-loc">Москва · Смоленский рынок и Тверской бульвар</span></a></li>
+        <li data-toc-item data-part="2"><a href="glava-29.html"><span class="toc-num">Глава XXIX</span><span class="toc-title">Судьба мастера и Маргариты определена</span><span class="toc-loc">Москва · Крыша дома Пашкова</span></a></li>
+        <li data-toc-item data-part="2"><a href="glava-30.html"><span class="toc-num">Глава XXX</span><span class="toc-title">Пора! Пора!</span><span class="toc-loc">Москва · Полуподвал у Арбата</span></a></li>
+        <li data-toc-item data-part="2"><a href="glava-31.html"><span class="toc-num">Глава XXXI</span><span class="toc-title">На Воробьевых горах</span><span class="toc-loc">Москва · Воробьевы горы</span></a></li>
+        <li data-toc-item data-part="2"><a href="glava-32.html"><span class="toc-num">Глава XXXII</span><span class="toc-title">Прощение и вечный приют</span><span class="toc-loc">Вечность · Лунный путь</span></a></li>
+        <li data-toc-item data-part="2"><a href="epilog.html"><span class="toc-num">Эпилог</span><span class="toc-title">Эпилог</span><span class="toc-loc">Москва · Институт истории и Патриаршие пруды</span></a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <span>М. А. Булгаков · «Мастер и Маргарита» · Чистое HTML-издание</span>
+      <span><a href="glava-01.html">Глава I</a> · <a href="geroi.html">Герои и места</a></span>
+    </div>
+  </footer>
+
+  <script src="book.js"></script>
+</body>
+</html>

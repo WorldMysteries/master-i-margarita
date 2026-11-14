@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Глава XV. Сон Никанора Ивановича — Мастер и Маргарита</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="mode-spread">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html">Мастер и Маргарита</a>
+      <nav class="top-links">
+        <a href="index.html">Оглавление</a>
+        <a href="glava-01.html" class="active">Читать книгу</a>
+        <a href="geroi.html">Герои и места</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="reader-toolbar">
+    <div class="reader-toolbar-inner">
+      <div class="toolbar-group">
+        <select id="chapterSelect" class="ctrl-select" aria-label="Перейти к главе"><option value="glava-01.html">Глава I. Никогда не разговаривайте с неизвестными</option><option value="glava-02.html">Глава II. Понтий Пилат</option><option value="glava-03.html">Глава III. Седьмое доказательство</option><option value="glava-04.html">Глава IV. Погоня</option><option value="glava-05.html">Глава V. Было дело в Грибоедове</option><option value="glava-06.html">Глава VI. Шизофрения, как и было сказано</option><option value="glava-07.html">Глава VII. Нехорошая квартира</option><option value="glava-08.html">Глава VIII. Поединок между профессором и поэтом</option><option value="glava-09.html">Глава IX. Коровьевские штуки</option><option value="glava-10.html">Глава X. Вести из Ялты</option><option value="glava-11.html">Глава XI. Раздвоение Ивана</option><option value="glava-12.html">Глава XII. Черная магия и ее разоблачение</option><option value="glava-13.html">Глава XIII. Явление героя</option><option value="glava-14.html">Глава XIV. Слава петуху!</option><option value="glava-15.html" selected>Глава XV. Сон Никанора Ивановича</option><option value="glava-16.html">Глава XVI. Казнь</option><option value="glava-17.html">Глава XVII. Беспокойный день</option><option value="glava-18.html">Глава XVIII. Неудачливые визитеры</option><option value="glava-19.html">Глава XIX. Маргарита</option><option value="glava-20.html">Глава XX. Крем Азазелло</option><option value="glava-21.html">Глава XXI. Полет</option><option value="glava-22.html">Глава XXII. При свечах</option><option value="glava-23.html">Глава XXIII. Великий бал у сатаны</option><option value="glava-24.html">Глава XXIV. Извлечение мастера</option><option value="glava-25.html">Глава XXV. Как прокуратор пытался спасти Иуду из Кириафа</option><option value="glava-26.html">Глава XXVI. Погребение</option><option value="glava-27.html">Глава XXVII. Конец квартиры № 50</option><option value="glava-28.html">Глава XXVIII. Последние похождения Коровьева и Бегемота</option><option value="glava-29.html">Глава XXIX. Судьба мастера и Маргариты определена</option><option value="glava-30.html">Глава XXX. Пора! Пора!</option><option value="glava-31.html">Глава XXXI. На Воробьевых горах</option><option value="glava-32.html">Глава XXXII. Прощение и вечный приют</option><option value="epilog.html">Эпилог. Эпилог</option></select>
+        <button type="button" id="bookmarkBtn" class="ctrl-btn" data-slug="glava-15" data-title="Глава XV. Сон Никанора Ивановича">Закладка</button>
+      </div>
+
+      <div class="toolbar-group">
+        <button type="button" class="ctrl-btn" data-set-mode="spread">Книжный разворот</button>
+        <button type="button" class="ctrl-btn" data-set-mode="scroll">Лента</button>
+      </div>
+
+      <div class="toolbar-group">
+        <button type="button" id="fontDec" class="ctrl-btn" title="Уменьшить шрифт">А−</button>
+        <span id="fontSizeLabel" class="page-index" style="padding:0 4px;">18 px</span>
+        <button type="button" id="fontInc" class="ctrl-btn" title="Увеличить шрифт">А+</button>
+        <button type="button" class="ctrl-btn" data-set-theme="paper">Бумага</button>
+        <button type="button" class="ctrl-btn" data-set-theme="sepia">Сепия</button>
+        <button type="button" class="ctrl-btn" data-set-theme="night">Ночь</button>
+      </div>
+    </div>
+  </div>
+
+  <main class="main-wrap">
+    <!-- Open Book Spread Mode -->
+    <section
+      id="spreadContainer"
+      class="spread-container"
+      data-chapter-title="Сон Никанора Ивановича"
+      data-chapter-roman="Глава XV"
+      data-chapter-part="Часть первая"
+      data-chapter-location="Москва · Клиника Стравинского"
+      data-prev-href="glava-14.html"
+      data-next-href="glava-16.html"
+    >
+      <div class="spread-book">
+        <div id="spreadLeft" class="spread-page left"></div>
+        <div id="spreadRight" class="spread-page right"></div>
+      </div>
+      <div class="spread-controls">
+        <button type="button" id="spreadPrev" class="ctrl-btn">&larr; Предыдущая страница</button>
+        <span id="spreadIndicator" class="page-index"></span>
+        <button type="button" id="spreadNext" class="ctrl-btn active">Следующая страница &rarr;</button>
+      </div>
+    </section>
+
+    <!-- Comfortable Continuous Scroll Mode -->
+    <article class="book-sheet is-chapter-sheet">
+      <div class="kicker">Часть первая · Глава XV · Москва · Клиника Стравинского</div>
+      <h1>Сон Никанора Ивановича</h1>
+      <p class="subtitle">Арест Босого и гротескный театр «сдачи валюты»</p>
+      <hr class="hairline" />
+      
+      
+      <div id="chapterSourceProse" class="prose">
+        <p class="dropcap">Доставленный в клинику с нервным срывом председатель жилтоварищества Босой заснул под действием снотворного, но и во сне не обрел покоя. Ему приснился странный полутемный театральный зал, где толстый, приторно вежливый конферансье со сцены призывал зрителей добровольно сдавать припрятанную валюту.</p>
+      <p>В этом сновидении — язвительной сатире на принудительные конфискации эпохи — актеры читали «Скупого рыцаря» Пушкина, а каждый из зрителей покорно вставал и выкладывал припрятанные золотые десятки и доллары. Проснулся Никанор Иванович в холодном поту, проклиная все деньги мира — но все же в ужасе пересчитывая в уме сгинувшие червонцы.</p>
+      </div>
+      <aside class="annotations">
+      <h2>Примечания к главе</h2>
+      <dl>
+        <dt>«Скупой рыцарь»</dt><dd>Цитаты из пушкинской «маленькой трагедии» в театре сновидения подчеркивают тему рабства человека перед золотом.</dd>
+      </dl>
+    </aside>
+      <nav class="chapter-pager">
+        <a class="nav-btn prev-link" href="glava-14.html">&larr; Глава XIV: Слава петуху!</a>
+        <span class="page-index">15 / 33</span>
+        <a class="nav-btn next-link" href="glava-16.html">Глава XVI: Казнь &rarr;</a>
+      </nav>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <span>М. А. Булгаков · «Мастер и Маргарита» · Многостраничное HTML-издание</span>
+      <span><a href="index.html">Оглавление</a> · <a href="geroi.html">Герои и места</a></span>
+    </div>
+  </footer>
+
+  <script src="book.js"></script>
+</body>
+</html>

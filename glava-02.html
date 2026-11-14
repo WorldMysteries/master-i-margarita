@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Глава II. Понтий Пилат — Мастер и Маргарита</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="mode-spread">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html">Мастер и Маргарита</a>
+      <nav class="top-links">
+        <a href="index.html">Оглавление</a>
+        <a href="glava-01.html" class="active">Читать книгу</a>
+        <a href="geroi.html">Герои и места</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="reader-toolbar">
+    <div class="reader-toolbar-inner">
+      <div class="toolbar-group">
+        <select id="chapterSelect" class="ctrl-select" aria-label="Перейти к главе"><option value="glava-01.html">Глава I. Никогда не разговаривайте с неизвестными</option><option value="glava-02.html" selected>Глава II. Понтий Пилат</option><option value="glava-03.html">Глава III. Седьмое доказательство</option><option value="glava-04.html">Глава IV. Погоня</option><option value="glava-05.html">Глава V. Было дело в Грибоедове</option><option value="glava-06.html">Глава VI. Шизофрения, как и было сказано</option><option value="glava-07.html">Глава VII. Нехорошая квартира</option><option value="glava-08.html">Глава VIII. Поединок между профессором и поэтом</option><option value="glava-09.html">Глава IX. Коровьевские штуки</option><option value="glava-10.html">Глава X. Вести из Ялты</option><option value="glava-11.html">Глава XI. Раздвоение Ивана</option><option value="glava-12.html">Глава XII. Черная магия и ее разоблачение</option><option value="glava-13.html">Глава XIII. Явление героя</option><option value="glava-14.html">Глава XIV. Слава петуху!</option><option value="glava-15.html">Глава XV. Сон Никанора Ивановича</option><option value="glava-16.html">Глава XVI. Казнь</option><option value="glava-17.html">Глава XVII. Беспокойный день</option><option value="glava-18.html">Глава XVIII. Неудачливые визитеры</option><option value="glava-19.html">Глава XIX. Маргарита</option><option value="glava-20.html">Глава XX. Крем Азазелло</option><option value="glava-21.html">Глава XXI. Полет</option><option value="glava-22.html">Глава XXII. При свечах</option><option value="glava-23.html">Глава XXIII. Великий бал у сатаны</option><option value="glava-24.html">Глава XXIV. Извлечение мастера</option><option value="glava-25.html">Глава XXV. Как прокуратор пытался спасти Иуду из Кириафа</option><option value="glava-26.html">Глава XXVI. Погребение</option><option value="glava-27.html">Глава XXVII. Конец квартиры № 50</option><option value="glava-28.html">Глава XXVIII. Последние похождения Коровьева и Бегемота</option><option value="glava-29.html">Глава XXIX. Судьба мастера и Маргариты определена</option><option value="glava-30.html">Глава XXX. Пора! Пора!</option><option value="glava-31.html">Глава XXXI. На Воробьевых горах</option><option value="glava-32.html">Глава XXXII. Прощение и вечный приют</option><option value="epilog.html">Эпилог. Эпилог</option></select>
+        <button type="button" id="bookmarkBtn" class="ctrl-btn" data-slug="glava-02" data-title="Глава II. Понтий Пилат">Закладка</button>
+      </div>
+
+      <div class="toolbar-group">
+        <button type="button" class="ctrl-btn" data-set-mode="spread">Книжный разворот</button>
+        <button type="button" class="ctrl-btn" data-set-mode="scroll">Лента</button>
+      </div>
+
+      <div class="toolbar-group">
+        <button type="button" id="fontDec" class="ctrl-btn" title="Уменьшить шрифт">А−</button>
+        <span id="fontSizeLabel" class="page-index" style="padding:0 4px;">18 px</span>
+        <button type="button" id="fontInc" class="ctrl-btn" title="Увеличить шрифт">А+</button>
+        <button type="button" class="ctrl-btn" data-set-theme="paper">Бумага</button>
+        <button type="button" class="ctrl-btn" data-set-theme="sepia">Сепия</button>
+        <button type="button" class="ctrl-btn" data-set-theme="night">Ночь</button>
+      </div>
+    </div>
+  </div>
+
+  <main class="main-wrap">
+    <!-- Open Book Spread Mode -->
+    <section
+      id="spreadContainer"
+      class="spread-container"
+      data-chapter-title="Понтий Пилат"
+      data-chapter-roman="Глава II"
+      data-chapter-part="Часть первая"
+      data-chapter-location="Ершалаим · Дворец Ирода"
+      data-prev-href="glava-01.html"
+      data-next-href="glava-03.html"
+    >
+      <div class="spread-book">
+        <div id="spreadLeft" class="spread-page left"></div>
+        <div id="spreadRight" class="spread-page right"></div>
+      </div>
+      <div class="spread-controls">
+        <button type="button" id="spreadPrev" class="ctrl-btn">&larr; Предыдущая страница</button>
+        <span id="spreadIndicator" class="page-index"></span>
+        <button type="button" id="spreadNext" class="ctrl-btn active">Следующая страница &rarr;</button>
+      </div>
+    </section>
+
+    <!-- Comfortable Continuous Scroll Mode -->
+    <article class="book-sheet is-chapter-sheet">
+      <div class="kicker">Часть первая · Глава II · Ершалаим · Дворец Ирода</div>
+      <h1>Понтий Пилат</h1>
+      <p class="subtitle">Утро четырнадцатого нисана во дворце Ирода Великого</p>
+      <hr class="hairline" />
+      
+      <figure id="chapterPlateSource" class="chapter-plate" data-src="images/yershalaim.jpg" data-caption="Рис. 2 — Колоннада дворца в Ершалаиме под палящим полуденным солнцем">
+          <img src="images/yershalaim.jpg" alt="Белая каменная колоннада дворца в древнем Ершалаиме и надвигающиеся грозовые тучи" />
+          <figcaption>Рис. 2 — Колоннада дворца в Ершалаиме под палящим полуденным солнцем</figcaption>
+        </figure>
+      <div id="chapterSourceProse" class="prose">
+        <p class="dropcap">В белом плаще с кровавым подбоем, шаркающей кавалерийской походкой, ранним утром четырнадцатого числа весеннего месяца нисана в крытую колоннаду между двумя крыльями дворца Ирода Великого вышел прокуратор Иудеи Понтий Пилат.</p>
+      <p>Более всего на свете прокуратор ненавидел запах розового масла, и все теперь предвещало нехороший день, так как запах этот начал преследовать прокуратора с рассвета. Прокуратору казалось, что розовый запах источают кипарисы и пальмы в саду, что к запаху кожи и конвоя примешивается проклятая розовая струя. От флигелей в тылу дворца, где расположилась пришедшая с прокуратором в Ершалаим первая когорта Двенадцатого Молниеносного легиона, заносило дымком в колоннаду через верхнюю площадку сада, и к горьковатому дыму, свидетельствовавшему о том, что кашевары в кентуриях уже начали готовить обед, примешивался все тот же жирный розовый дух.</p>
+      <p>«О боги, боги, за что вы наказываете меня? Да, нет сомнений! Это она, опять она, непобедимая, ужасная болезнь гемикрания, при которой болит полголовы. От нее нет средств, нет никакого спасения. Попробую не двигать головой».</p>
+      <p>На мозаиковом полу у фонтана уже было приготовлено кресло, и прокуратор, не глядя ни на кого, сел в него и протянул руку в сторону. Секретарь почтительно вложил в эту руку кусок пергамента. Не удержавшись от болезненной гримасы, прокуратор искоса, бегло проглядел написанное, вернул пергамент секретарю и проговорил с трудом: «Подследственный из Галилеи? К тетрарху дело посылали?»</p>
+      <p>Так начался допрос бродячего философа Иешуа Га-Ноцри из Гамалы, человека с завязанным бинтом ушибом на лице, который в отличие от всех прочих подсудимых называл жестокого всадника «добрым человеком» и утверждал, что всякая власть является насилием над людьми и что настанет время, когда не будет власти ни кесарей, ни какой-либо иной власти.</p>
+      <p>Прокуратор чувствовал, как в беседе с этим странным нищим осыпается, уходит его невыносимая головная боль. Ему мучительно хотелось спасти Га-Ноцри, отправить его в Кесарию Стратонову, в свою библиотеку, подальше от ненавистного ему Ершалаима и первосвященника Каифы. Но в деле звучало обвинение в оскорблении величества кесаря — слово, перед которым даже всесильный прокуратор не решался отступить.</p>
+      <p>На тайной беседе в саду Каифа, закутав лицо от зноя, холодно и неумолимо отверг просьбу Пилата помиловать Иешуа в честь праздника Пасхи, настояв на освобождении разбойника Вар-раввана. Понимая, что отказ приведет к бунту и доносу Тиберию, Пилат уступил — и в тот же миг почувствовал, как внутри него все оборвалось.</p>
+      <p>Выйдя на каменный помост перед ревущей, задыхающейся от пыли толпой, всадник Золотое Копье прохрипел имя спасенного — Вар-равван — и подписал себе бессмертную муку совести, которая будет преследовать его двенадцать тысяч лун.</p>
+      </div>
+      <aside class="annotations">
+      <h2>Примечания к главе</h2>
+      <dl>
+        <dt>Кровавый подбой плаща</dt><dd>Пурпурная подкладка белого военного плаща римского всадника — деталь, задающая тему власти, пролитой крови и внутреннего раскаяния Пилата.</dd>
+        <dt>Гемикрания</dt><dd>Древнегреческое название мигрени (буквально «боль половины головы»), выступающей у Булгакова физическим отражением душевной раздвоенности прокуратора.</dd>
+        <dt>Манера повествования</dt><dd>Сцена в Ершалаиме — это фрагмент романа Мастера, который Воланд рассказывает на Патриарших как очевидец событий.</dd>
+      </dl>
+    </aside>
+      <nav class="chapter-pager">
+        <a class="nav-btn prev-link" href="glava-01.html">&larr; Глава I: Никогда не разговаривайте с неизвестными</a>
+        <span class="page-index">2 / 33</span>
+        <a class="nav-btn next-link" href="glava-03.html">Глава III: Седьмое доказательство &rarr;</a>
+      </nav>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <span>М. А. Булгаков · «Мастер и Маргарита» · Многостраничное HTML-издание</span>
+      <span><a href="index.html">Оглавление</a> · <a href="geroi.html">Герои и места</a></span>
+    </div>
+  </footer>
+
+  <script src="book.js"></script>
+</body>
+</html>

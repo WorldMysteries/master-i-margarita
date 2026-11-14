@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Глава I. Никогда не разговаривайте с неизвестными — Мастер и Маргарита</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="mode-spread">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html">Мастер и Маргарита</a>
+      <nav class="top-links">
+        <a href="index.html">Оглавление</a>
+        <a href="glava-01.html" class="active">Читать книгу</a>
+        <a href="geroi.html">Герои и места</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="reader-toolbar">
+    <div class="reader-toolbar-inner">
+      <div class="toolbar-group">
+        <select id="chapterSelect" class="ctrl-select" aria-label="Перейти к главе"><option value="glava-01.html" selected>Глава I. Никогда не разговаривайте с неизвестными</option><option value="glava-02.html">Глава II. Понтий Пилат</option><option value="glava-03.html">Глава III. Седьмое доказательство</option><option value="glava-04.html">Глава IV. Погоня</option><option value="glava-05.html">Глава V. Было дело в Грибоедове</option><option value="glava-06.html">Глава VI. Шизофрения, как и было сказано</option><option value="glava-07.html">Глава VII. Нехорошая квартира</option><option value="glava-08.html">Глава VIII. Поединок между профессором и поэтом</option><option value="glava-09.html">Глава IX. Коровьевские штуки</option><option value="glava-10.html">Глава X. Вести из Ялты</option><option value="glava-11.html">Глава XI. Раздвоение Ивана</option><option value="glava-12.html">Глава XII. Черная магия и ее разоблачение</option><option value="glava-13.html">Глава XIII. Явление героя</option><option value="glava-14.html">Глава XIV. Слава петуху!</option><option value="glava-15.html">Глава XV. Сон Никанора Ивановича</option><option value="glava-16.html">Глава XVI. Казнь</option><option value="glava-17.html">Глава XVII. Беспокойный день</option><option value="glava-18.html">Глава XVIII. Неудачливые визитеры</option><option value="glava-19.html">Глава XIX. Маргарита</option><option value="glava-20.html">Глава XX. Крем Азазелло</option><option value="glava-21.html">Глава XXI. Полет</option><option value="glava-22.html">Глава XXII. При свечах</option><option value="glava-23.html">Глава XXIII. Великий бал у сатаны</option><option value="glava-24.html">Глава XXIV. Извлечение мастера</option><option value="glava-25.html">Глава XXV. Как прокуратор пытался спасти Иуду из Кириафа</option><option value="glava-26.html">Глава XXVI. Погребение</option><option value="glava-27.html">Глава XXVII. Конец квартиры № 50</option><option value="glava-28.html">Глава XXVIII. Последние похождения Коровьева и Бегемота</option><option value="glava-29.html">Глава XXIX. Судьба мастера и Маргариты определена</option><option value="glava-30.html">Глава XXX. Пора! Пора!</option><option value="glava-31.html">Глава XXXI. На Воробьевых горах</option><option value="glava-32.html">Глава XXXII. Прощение и вечный приют</option><option value="epilog.html">Эпилог. Эпилог</option></select>
+        <button type="button" id="bookmarkBtn" class="ctrl-btn" data-slug="glava-01" data-title="Глава I. Никогда не разговаривайте с неизвестными">Закладка</button>
+      </div>
+
+      <div class="toolbar-group">
+        <button type="button" class="ctrl-btn" data-set-mode="spread">Книжный разворот</button>
+        <button type="button" class="ctrl-btn" data-set-mode="scroll">Лента</button>
+      </div>
+
+      <div class="toolbar-group">
+        <button type="button" id="fontDec" class="ctrl-btn" title="Уменьшить шрифт">А−</button>
+        <span id="fontSizeLabel" class="page-index" style="padding:0 4px;">18 px</span>
+        <button type="button" id="fontInc" class="ctrl-btn" title="Увеличить шрифт">А+</button>
+        <button type="button" class="ctrl-btn" data-set-theme="paper">Бумага</button>
+        <button type="button" class="ctrl-btn" data-set-theme="sepia">Сепия</button>
+        <button type="button" class="ctrl-btn" data-set-theme="night">Ночь</button>
+      </div>
+    </div>
+  </div>
+
+  <main class="main-wrap">
+    <!-- Open Book Spread Mode -->
+    <section
+      id="spreadContainer"
+      class="spread-container"
+      data-chapter-title="Никогда не разговаривайте с неизвестными"
+      data-chapter-roman="Глава I"
+      data-chapter-part="Часть первая"
+      data-chapter-location="Москва · Патриаршие пруды"
+      data-prev-href="index.html"
+      data-next-href="glava-02.html"
+    >
+      <div class="spread-book">
+        <div id="spreadLeft" class="spread-page left"></div>
+        <div id="spreadRight" class="spread-page right"></div>
+      </div>
+      <div class="spread-controls">
+        <button type="button" id="spreadPrev" class="ctrl-btn">&larr; Предыдущая страница</button>
+        <span id="spreadIndicator" class="page-index"></span>
+        <button type="button" id="spreadNext" class="ctrl-btn active">Следующая страница &rarr;</button>
+      </div>
+    </section>
+
+    <!-- Comfortable Continuous Scroll Mode -->
+    <article class="book-sheet is-chapter-sheet">
+      <div class="kicker">Часть первая · Глава I · Москва · Патриаршие пруды</div>
+      <h1>Никогда не разговаривайте с неизвестными</h1>
+      <p class="subtitle">Жаркий майский закат на Патриарших прудах и встреча с иностранцем</p>
+      <hr class="hairline" />
+      <blockquote id="chapterEpigraphSource" class="epigraph"><p>«...Так кто ж ты, наконец?» — «Я — часть той силы, что вечно хочет зла и вечно совершает благо».</p><cite>— Гёте. «Фауст»</cite></blockquote>
+      <figure id="chapterPlateSource" class="chapter-plate" data-src="images/patriarchs.jpg" data-caption="Рис. 1 — Липовая аллея на Патриарших прудах в час майского заката">
+          <img src="images/patriarchs.jpg" alt="Патриаршие пруды в Москве на закате с трамвайной линией вдалеке" />
+          <figcaption>Рис. 1 — Липовая аллея на Патриарших прудах в час майского заката</figcaption>
+        </figure>
+      <div id="chapterSourceProse" class="prose">
+        <p class="dropcap">Однажды весною, в час небывало жаркого заката, в Москве, на Патриарших прудах, появились два гражданина. Первый из них, одетый в летнюю серенькую пару, был маленького роста, упитан, лыс, свою приличную шляпу пирожком нес в руке, а на хорошо выбритом лице его помещались сверхъестественных размеров очки в черной роговой оправе.</p>
+      <p>Второй — плечистый, рыжеватый, вихрастый молодой человек в заломленной на затылок клетчатой кепке — был в ковбойке, жеваных белых брюках и в черных тапочках. Первый был не кто иной, как Михаил Александрович Берлиоз, председатель правления одной из крупнейших московских литературных ассоциаций, сокращенно именуемой МАССОЛИТ, и редактор толстого художественного журнала, а молодой спутник его — поэт Иван Николаевич Понырев, пишущий под псевдонимом Бездомный.</p>
+      <p>Попав в тень чуть зеленеющих лип, писатели первым долгом бросились к пестро раскрашенной будочке с надписью «Пиво и воды». Тут следует отметить первую странность этого страшного майского вечера. Не только у будочки, но и во всей аллее, параллельной Малой Бронной улице, не оказалось ни одного человека. В тот час, когда уж, кажется, и сил не было дышать, когда солнце, раскалив Москву, в сухом тумане валилось куда-то за Садовое кольцо, — никто не пришел под липы, никто не сел на скамейку, пуста была аллея.</p>
+      <p>— Дайте нарзану, — попросил Берлиоз.</p>
+      <p>— Нарзану нету, — ответила женщина в будочке и почему-то обиделась.</p>
+      <p>— Пиво есть? — сиплым голосом осведомился Бездомный.</p>
+      <p>— Пиво привезут к вечеру, — ответила женщина.</p>
+      <p>— А что же есть? — спросил Берлиоз.</p>
+      <p>— Абрикосовая, только теплая, — сказала женщина.</p>
+      <p>— Ну, давайте, давайте, давайте!..</p>
+      <p>Абрикосовая дала обильную желтую пену, и в воздухе запахло парикмахерской. Напившись, литераторы немедленно начали икать, расплатились и уселись на скамейке лицом к пруду и спиной к Бронной. Тут приключилась вторая странность, касающаяся одного Берлиоза. Он внезапно перестал икать, сердце его стукнуло и на мгновение куда-то провалилось, потом вернулось, но с тупой иглой, засевшей в нем. Кроме того, Берлиоза охватил необоснованный, но столь сильный страх, что ему захотелось тотчас же бежать с Патриарших без оглядки.</p>
+      <p>В этот момент раскаленный воздух сгустился перед ним, и соткался из этого воздуха прозрачный гражданин престранного вида: на маленькой головке жокейский картузик, клетчатый кургузый воздушный же пиджачок... Гражданин ростом в сажень, но в плечах узок, худ неимоверно, и физиономия, прошу заметить, глумливая. Берлиоз зажмурил глаза, а когда открыл их, увидел, что все прошло, мираж растворился, а вдали по аллее к ним приближается высокий иностранец в дорогом сером костюме, с тростью, набалдашник которой выполнен в виде черной головы пуделя.</p>
+      <p>Речь между литераторами шла о большой антирелигиозной поэме, которую Иван Бездомный написал для очередного номера журнала, но, по мнению Берлиоза, неверно истолковал главный образ. Берлиоз доказывал поэту, что Иисуса как личности вообще не существовало на свете и что все рассказы о нем — простые выдумки, самый обыкновенный миф. Слушавший их неподалеку иностранец вежливо попросил разрешения присесть и вступил в беседу.</p>
+      <p>Загадочный собеседник с разными глазами — правым черным, мертвым, и левым зеленым, совершенно безумным — поразил писателей своей осведомленностью: он не только свободно говорил о Канте, но и утверждал, что лично завтракал с философом, а затем тихим, вкрадчивым голосом добавил, что доказательств бытия Божия существует не пять и не шесть, а семь. И прежде чем пораженные литераторы опомнились, он спокойно предсказал, что сам Берлиоз сегодня вечером погибнет нелепой, но точной смертью: ему отрежет голову трамваем женщина — русская, комсомолка, — потому что Аннушка уже купила подсолнечное масло, и не только купила, но даже разлила.</p>
+      <p>Ошеломленные словами незнакомца, которого они поспешно приняли за сумасшедшего или за иностранного шпиона, Берлиоз и Бездомный все еще спорили с ним о том, кто управляет жизнью человеческой, если не сам человек. Незнакомец усмехнулся: «Кирпич ни с того ни с сего никому и никогда на голову не свалится. В частности же, уверяю вас, вам он ни в каком случае не угрожает. Вы умрете другой смертью». И, достав золотые часы с алмазным треугольником на крышке, он предложил литераторам не расстраиваться, а послушать то, что происходило на самом деле в Ершалаиме четырнадцатого числа весеннего месяца нисана.</p>
+      </div>
+      <aside class="annotations">
+      <h2>Примечания к главе</h2>
+      <dl>
+        <dt>МАССОЛИТ</dt><dd>Вымышленная Булгаковым московская писательская организация — сатирический образ советских литературных союзов (РАПП, МАПП) конца 1920-х — 1930-х годов.</dd>
+        <dt>Разные глаза Воланда</dt><dd>Правый глаз черный, левый зеленый — классическая фольклорная и демонологическая примета, подчеркивающая двойственную и иномирную природу профессора черной магии.</dd>
+        <dt>Аннушка и масло</dt><dd>Образ «Аннушки» восходит к реальной соседке Булгакова по коммунальной квартире на Большой Садовой, ставшей символом нелепого, но неотвратимого рока.</dd>
+      </dl>
+    </aside>
+      <nav class="chapter-pager">
+        <a class="nav-btn prev-link" href="index.html">&larr; Оглавление</a>
+        <span class="page-index">1 / 33</span>
+        <a class="nav-btn next-link" href="glava-02.html">Глава II: Понтий Пилат &rarr;</a>
+      </nav>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <span>М. А. Булгаков · «Мастер и Маргарита» · Многостраничное HTML-издание</span>
+      <span><a href="index.html">Оглавление</a> · <a href="geroi.html">Герои и места</a></span>
+    </div>
+  </footer>
+
+  <script src="book.js"></script>
+</body>
+</html>

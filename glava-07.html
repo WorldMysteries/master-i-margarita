@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Глава VII. Нехорошая квартира — Мастер и Маргарита</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="mode-spread">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html">Мастер и Маргарита</a>
+      <nav class="top-links">
+        <a href="index.html">Оглавление</a>
+        <a href="glava-01.html" class="active">Читать книгу</a>
+        <a href="geroi.html">Герои и места</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="reader-toolbar">
+    <div class="reader-toolbar-inner">
+      <div class="toolbar-group">
+        <select id="chapterSelect" class="ctrl-select" aria-label="Перейти к главе"><option value="glava-01.html">Глава I. Никогда не разговаривайте с неизвестными</option><option value="glava-02.html">Глава II. Понтий Пилат</option><option value="glava-03.html">Глава III. Седьмое доказательство</option><option value="glava-04.html">Глава IV. Погоня</option><option value="glava-05.html">Глава V. Было дело в Грибоедове</option><option value="glava-06.html">Глава VI. Шизофрения, как и было сказано</option><option value="glava-07.html" selected>Глава VII. Нехорошая квартира</option><option value="glava-08.html">Глава VIII. Поединок между профессором и поэтом</option><option value="glava-09.html">Глава IX. Коровьевские штуки</option><option value="glava-10.html">Глава X. Вести из Ялты</option><option value="glava-11.html">Глава XI. Раздвоение Ивана</option><option value="glava-12.html">Глава XII. Черная магия и ее разоблачение</option><option value="glava-13.html">Глава XIII. Явление героя</option><option value="glava-14.html">Глава XIV. Слава петуху!</option><option value="glava-15.html">Глава XV. Сон Никанора Ивановича</option><option value="glava-16.html">Глава XVI. Казнь</option><option value="glava-17.html">Глава XVII. Беспокойный день</option><option value="glava-18.html">Глава XVIII. Неудачливые визитеры</option><option value="glava-19.html">Глава XIX. Маргарита</option><option value="glava-20.html">Глава XX. Крем Азазелло</option><option value="glava-21.html">Глава XXI. Полет</option><option value="glava-22.html">Глава XXII. При свечах</option><option value="glava-23.html">Глава XXIII. Великий бал у сатаны</option><option value="glava-24.html">Глава XXIV. Извлечение мастера</option><option value="glava-25.html">Глава XXV. Как прокуратор пытался спасти Иуду из Кириафа</option><option value="glava-26.html">Глава XXVI. Погребение</option><option value="glava-27.html">Глава XXVII. Конец квартиры № 50</option><option value="glava-28.html">Глава XXVIII. Последние похождения Коровьева и Бегемота</option><option value="glava-29.html">Глава XXIX. Судьба мастера и Маргариты определена</option><option value="glava-30.html">Глава XXX. Пора! Пора!</option><option value="glava-31.html">Глава XXXI. На Воробьевых горах</option><option value="glava-32.html">Глава XXXII. Прощение и вечный приют</option><option value="epilog.html">Эпилог. Эпилог</option></select>
+        <button type="button" id="bookmarkBtn" class="ctrl-btn" data-slug="glava-07" data-title="Глава VII. Нехорошая квартира">Закладка</button>
+      </div>
+
+      <div class="toolbar-group">
+        <button type="button" class="ctrl-btn" data-set-mode="spread">Книжный разворот</button>
+        <button type="button" class="ctrl-btn" data-set-mode="scroll">Лента</button>
+      </div>
+
+      <div class="toolbar-group">
+        <button type="button" id="fontDec" class="ctrl-btn" title="Уменьшить шрифт">А−</button>
+        <span id="fontSizeLabel" class="page-index" style="padding:0 4px;">18 px</span>
+        <button type="button" id="fontInc" class="ctrl-btn" title="Увеличить шрифт">А+</button>
+        <button type="button" class="ctrl-btn" data-set-theme="paper">Бумага</button>
+        <button type="button" class="ctrl-btn" data-set-theme="sepia">Сепия</button>
+        <button type="button" class="ctrl-btn" data-set-theme="night">Ночь</button>
+      </div>
+    </div>
+  </div>
+
+  <main class="main-wrap">
+    <!-- Open Book Spread Mode -->
+    <section
+      id="spreadContainer"
+      class="spread-container"
+      data-chapter-title="Нехорошая квартира"
+      data-chapter-roman="Глава VII"
+      data-chapter-part="Часть первая"
+      data-chapter-location="Москва · Большая Садовая, д. 302-бис, кв. 50"
+      data-prev-href="glava-06.html"
+      data-next-href="glava-08.html"
+    >
+      <div class="spread-book">
+        <div id="spreadLeft" class="spread-page left"></div>
+        <div id="spreadRight" class="spread-page right"></div>
+      </div>
+      <div class="spread-controls">
+        <button type="button" id="spreadPrev" class="ctrl-btn">&larr; Предыдущая страница</button>
+        <span id="spreadIndicator" class="page-index"></span>
+        <button type="button" id="spreadNext" class="ctrl-btn active">Следующая страница &rarr;</button>
+      </div>
+    </section>
+
+    <!-- Comfortable Continuous Scroll Mode -->
+    <article class="book-sheet is-chapter-sheet">
+      <div class="kicker">Часть первая · Глава VII · Москва · Большая Садовая, д. 302-бис, кв. 50</div>
+      <h1>Нехорошая квартира</h1>
+      <p class="subtitle">Утро директора Варьете Степы Лиходеева в квартире № 50</p>
+      <hr class="hairline" />
+      
+      
+      <div id="chapterSourceProse" class="prose">
+        <p class="dropcap">Если кто-нибудь и знал, почему в доме № 302-бис по Садовой улице в шестом этаже, в квартире № 50, люди исчезали без следа еще до приезда иностранного консультанта, то он помалкивал. В просторной квартире с паркетными полами проживали двое: покойный ныне Берлиоз и директор театра Варьете Степан Богданович Лиходеев.</p>
+      <p>Утро четверга началось для Степы с жесточайшего похмелья и ужаса перед трельяжем: в зеркале отразился не только его опухший лик, но и незнакомый молчаливый брюнет в черном. Воланд спокойно предъявил ошеломленному директору подписанный им самим вчера контракт на семь выступлений по тридцать пять тысяч рублей, а на столе уже стояла ледяная водка, икра и маринованные грибки.</p>
+      <p>Едва Степа попытался дозвониться до финдиректора Римского, как Азазелло — низенький коренастый рыжий тип с бельмом и торчащим клыком — невежливо вмешался в разговор, и в следующую секунду неведомая сила вышвырнула Лиходеева из Москвы прямо на ялтинский мол в одних носках и ночной сорочке.</p>
+      </div>
+      <aside class="annotations">
+      <h2>Примечания к главе</h2>
+      <dl>
+        <dt>Дом № 302-бис</dt><dd>За этим адресом скрывается реальный дом № 10 по Большой Садовой (дом Пигита), где Михаил Булгаков жил в коммунальной квартире № 50 в 1921–1924 годах.</dd>
+      </dl>
+    </aside>
+      <nav class="chapter-pager">
+        <a class="nav-btn prev-link" href="glava-06.html">&larr; Глава VI: Шизофрения, как и было сказано</a>
+        <span class="page-index">7 / 33</span>
+        <a class="nav-btn next-link" href="glava-08.html">Глава VIII: Поединок между профессором и поэтом &rarr;</a>
+      </nav>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <span>М. А. Булгаков · «Мастер и Маргарита» · Многостраничное HTML-издание</span>
+      <span><a href="index.html">Оглавление</a> · <a href="geroi.html">Герои и места</a></span>
+    </div>
+  </footer>
+
+  <script src="book.js"></script>
+</body>
+</html>
