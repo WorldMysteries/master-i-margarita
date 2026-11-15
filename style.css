@@ -502,3 +502,14 @@ body.mode-spread .spread-container {
   justify-content: space-between;
   gap: 16px;
 }
+
+/* Full text */
+.prose h3.chap-h{font-family:'Cormorant Garamond',Georgia,serif;text-align:center;font-size:1.55rem;font-weight:600;margin:1.6em 0 .7em;color:var(--ink)}
+.spread-body .prose h3.chap-h:first-child{margin-top:.2em}
+.prose p.center{text-align:center;text-indent:0}.prose p.right{text-align:right;text-indent:0}
+.prose blockquote.verse{margin:1em 2em;font-style:italic;font-size:calc(var(--reader-font-size,18px)*.95);line-height:1.6}
+.prose .tbl-wrap{overflow-x:auto;margin:1em 0}.prose table{border-collapse:collapse;font-size:.9em}.prose td{border:1px solid var(--border);padding:4px 8px;vertical-align:top}
+.prose figure.chapter-plate img{max-height:60vh;width:auto;max-width:100%;object-fit:contain}
+sup.fn{color:var(--accent);cursor:pointer;font-size:.68em;padding:0 1px}
+#fnPop{position:absolute;z-index:50;max-width:22rem;background:var(--page);color:var(--ink);border:1px solid var(--border);box-shadow:var(--shadow);padding:10px 12px;font-size:.88rem;line-height:1.5;border-radius:4px}
+.retell{margin:0 0 24px;border:1px solid var(--border);padding:10px 16px;border-radius:4px}.retell summary{cursor:pointer;font-weight:600}

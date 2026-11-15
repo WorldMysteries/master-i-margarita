@@ -147,29 +147,27 @@
 
   function buildPages() {
     if (!sourceProse) return [];
-    var paras = Array.prototype.slice.call(sourceProse.querySelectorAll('p'));
+    var nodes = Array.prototype.slice.call(sourceProse.children);
     var scale = 18 / Math.max(15, fontSize);
     var budget = Math.round(1150 * scale);
     var hasPlate = Boolean(document.getElementById('chapterPlateSource'));
     var openBudget = Math.round((hasPlate ? 500 : 820) * scale);
-    var result = [];
-    var buf = [];
-    var chars = 0;
-    var first = true;
-    paras.forEach(function (p, i) {
-      var len = p.textContent.length + 110;
+    var result = [], buf = [], chars = 0, first = true;
+    function flush() { result.push({ isFirst: first, paras: buf }); first = false; buf = []; chars = 0; }
+    nodes.forEach(function (el) {
+      var kind = el.tagName === 'H3' ? 'h' : (el.tagName === 'FIGURE' ? 'f' : 'x');
+      var len = kind === 'h' ? 260 : (kind === 'f' ? 650 : el.textContent.length + 110);
       var limit = first ? openBudget : budget;
       if (buf.length > 0 && chars + len > limit) {
-        result.push({ isFirst: first, paras: buf });
-        first = false;
-        buf = [{ text: p.textContent, isDrop: i === 0 }];
-        chars = len;
-      } else {
-        buf.push({ text: p.textContent, isDrop: i === 0 });
-        chars += len;
+        var carry = [];
+        if (buf[buf.length - 1].kind === 'h') carry.push(buf.pop());
+        flush();
+        buf = carry; chars = carry.length ? 260 : 0;
       }
+      buf.push({ kind: kind, outer: el.outerHTML, ch: kind === 'h' ? el.getAttribute('data-ch') : null });
+      chars += len;
     });
-    if (buf.length > 0) result.push({ isFirst: first, paras: buf });
+    if (buf.length > 0) flush();
     return result;
   }
 
@@ -199,9 +197,7 @@
       }
     }
     html += '<div class="prose">';
-    pageObj.paras.forEach(function (pr) {
-      html += '<p class="' + (pr.isDrop ? 'dropcap' : '') + '">' + pr.text.replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</p>';
-    });
+    pageObj.paras.forEach(function (pr) { html += pr.outer; });
     html += '</div></div>';
     html += '<div class="spread-footer"><span>' + (isHeaderPage ? chLoc : '') + '</span><span>стр. ' + pageNum + '</span></div>';
     el.innerHTML = html;
